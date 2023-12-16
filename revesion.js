@@ -161,3 +161,12 @@ function rangeFor(min, max) {
             result=result.concat (i) }
     return result
 }
+
+function rangeWhile(min, max) {
+    var result =[]
+        var i=min
+    while (i<max){
+        result=result.concat (i)
+    i++
+    }return result
+    }
