@@ -50,3 +50,33 @@ function reverseIterateAndLogWithWhile(n) {
     }
 
 }
+
+function reverseIterateAndLogRecursively(n) {
+    var x=n-1
+        if (x<0){
+            return  
+        }
+          if (x%2===0){
+               console.log (x+' is even')
+            }
+         else {
+                console.log (x+' is odd')
+            }
+        
+     return reverseIterateAndLogRecursively(n-1)
+    }
+
+    /*****************************  3  ***********************/
+
+    function weirdDivisionWithFor(n) {
+        for (var i=1;i<=n;i++){
+            if ((i%3===0)&&(i%5!==0)){
+                console.log ('Julia')}
+            else if ((i%5===0)&&(i%3!==0)){
+                console.log ('james')}
+            else if  ((i%3===0)&&(i%5===0)){
+            console.log  ('JuliaJames')}
+            else {
+                console.log (i)}
+        }
+}
